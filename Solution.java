@@ -19,12 +19,12 @@ public class Solution {
             System.out.println(a[i]);
     }
 
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int n = in.nextInt();
+    public static void main(String[] args) throws Exception {
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(in.readLine());
         a = new BigInteger[n];
         for(int unsorted_i=0; unsorted_i < n; unsorted_i ++){
-            String s = in.next();
+            String s = in.readLine();
             a[unsorted_i] = new BigInteger(s);
         }
         
